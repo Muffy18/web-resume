@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frincez Fabria | Web Resume</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2 class="logo">Professional Portfolio</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="darkModeBtn">Dark Mode</button>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+    <img src="profile.jpg" alt="Frincez Fabria" class="profile-img">
+    <h1 id="welcomeText">Hello, I'm Frincez!</h1>
+    <p>IT Student | Creative Designer | Future Developer</p>
+
+    <div class="personal-info">
+        <p><strong>Name:</strong> Frincez Jell Muffy Z. Fabria</p>
+        <p><strong>Phone:</strong> 09356778946</p>
+        <p><strong>Email:</strong> cezhyle.smith@gmail.com</p>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Profile Summary</h2>
+    <p>
+        I am Frincez Jell Muffy Z. Fabria, an IT student with skills in graphic design,
+        video editing, and problem-solving. I enjoy creating digital content and helping people
+        through technology.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="edu-entry">
+        <strong>University of Science and Technology of Southern Philippines</strong><br>
+        Bachelor of Information Technology (Ongoing)
+    </div>
+
+    <div class="edu-entry">
+        <strong>University of Science and Technology of Southern Philippines</strong><br>
+        Information and Communications Technology<br>
+        2017 - 2019
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <ul id="skillList">
+        <li>Graphic Design & Digital Content Creation</li>
+        <li>Video Editing & Multimedia Production</li>
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Detail-Oriented & Adaptable</li>
+        <li>Time Management & Project Organization</li>
+        <li>Computer Literacy & Software Proficiency</li>
+    </ul>
+
+    <!-- Add New Skill -->
+    <input type="text" id="newSkill" placeholder="Add new skill">
+    <button id="addSkillBtn">Add Skill</button>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div id="projectList">
+        <div class="project">
+            <strong>Project 1:</strong> DriveAlert - Driver Safety System<br>
+            <em>Developed a system that detects driver fatigue and alerts them to prevent accidents.</em>
+        </div>
+        <div class="project">
+            <strong>Project 2:</strong> Commuter Route Map App<br>
+            <em>Created a real-time app showing public transport routes and estimated travel times.</em>
+        </div>
+    </div>
+
+    <div id="moreProjects" style="display: none;">
+        <div class="project">
+            <strong>Project 3:</strong> Web Resume Project<br>
+            <em>Designed a one-page interactive web resume using HTML, CSS, JavaScript, and jQuery.</em>
+        </div>
+        <div class="project">
+            <strong>Project 4:</strong> Portfolio Gallery<br>
+            <em>Built an online gallery showcasing graphic design and video editing projects.</em>
+        </div>
+    </div>
+
+    <button id="toggleProjects">Show more projects</button>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Your Name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Your Email">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="formMessage"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
